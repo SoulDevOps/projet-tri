@@ -1,0 +1,21 @@
+# Algorithme de tri par insertion
+
+variables:
+	i,j,v: entier
+	tab[]: tableau
+Début
+	
+	Pour i de 1 à taille(tab)
+		v <- tab[i]
+		j <- i-1
+		
+		Tantque j >= 0 et tab[j] > v
+			tab[j+1] <- tab[j]
+			j <- j-1
+		Fin tantque
+		
+		tab[j+1] <- v
+	Fin pour
+
+Fin
+		
